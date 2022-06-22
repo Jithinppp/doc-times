@@ -1,0 +1,69 @@
+@import "../abstracts/variables";
+
+.card {
+  color: $color-text-black;
+  margin: 10px;
+  background-color: #fff;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  overflow: hidden;
+  width: 344px;
+  height: max-content;
+  .card__header {
+    margin-bottom: 1rem;
+    & img {
+      width: 100%;
+      object-position: center;
+      object-fit: cover;
+    }
+  }
+  & .card__body {
+    margin: 0 1rem;
+    & .tag {
+      margin-top: 0.5rem 0;
+      font-size: 0.8rem;
+      text-decoration: underline;
+    }
+    .post__title {
+      font-size: 1.2rem;
+      margin-bottom: 0;
+      margin-top: 10px;
+    }
+    .excerpt {
+      font-size: 0.9rem;
+    }
+    .readMore {
+      font-weight: 600;
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+  }
+  .author__container {
+    display: flex;
+    margin: 1.4rem 1rem;
+    .author__image {
+      border-radius: 50%;
+    }
+  }
+  .name__date__container {
+    margin-left: 1rem;
+    display: flex;
+    flex-direction: column;
+
+    .author__name {
+      font-weight: 600;
+      letter-spacing: -0.9px;
+    }
+    .date {
+      color: $color-text-light-black;
+      font-size: 0.78rem;
+      font-family: $font-DM-Serif-Text;
+    }
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .card {
+    width: 400px;
+  }
+}

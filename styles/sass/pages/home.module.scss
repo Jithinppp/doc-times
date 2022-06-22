@@ -1,0 +1,30 @@
+@import "../abstracts/variables";
+
+.home__container {
+  margin: 0.5rem 2rem;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: 5fr 3fr;
+  grid-gap: 1.4rem;
+
+  & .blogs {
+    grid-column: 1 / 2;
+    grid-row: 1 / -1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  & .options__container {
+    width: 100%;
+    grid-column: 2 / -1;
+    align-self: start;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .home__container {
+    display: block;
+  }
+}

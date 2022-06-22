@@ -1,0 +1,48 @@
+@import "../abstracts/variables";
+
+.widget__container {
+  margin-bottom: 2rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  padding: 1rem 0;
+  & h3 {
+    margin: 7px 0;
+  }
+  .post__container {
+    padding: 1rem;
+    width: 100%;
+    margin: 0.5rem;
+    display: flex;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    .featuredImage__container {
+      margin-right: 10px;
+      .featuredImage {
+        border-radius: 50%;
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+    .description {
+      display: flex;
+      flex-direction: column;
+      margin-left: 1rem;
+      & p {
+        margin: 0;
+      }
+      .post__title {
+        font-weight: 600;
+        margin-bottom: 7px;
+        cursor: pointer;
+      }
+      .post__date {
+        font-size: 0.8rem;
+        color: $color-text-light-black;
+      }
+    }
+  }
+}
