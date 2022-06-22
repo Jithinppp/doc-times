@@ -19,6 +19,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
   & .logo {
     margin: 0;
     font-family: $font-Playfair-Display;
@@ -62,5 +63,14 @@
       font-size: 1.7rem;
       margin: 0 1rem;
     }
+  }
+}
+@media screen and (max-width: 430px) {
+  .logo {
+    font-size: 1.4rem;
+  }
+  .nav__container {
+    flex-wrap: wrap;
+    justify-content: center;
   }
 }
