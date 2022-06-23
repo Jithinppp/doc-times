@@ -1,0 +1,20 @@
+@import "../abstracts/variables";
+
+.categories__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+  .category {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  & a {
+    font-size: 0.8rem;
+    background-color: $color-text-black;
+    margin: 0.2rem;
+    color: $color-text-white;
+    padding: 5px 7px;
+  }
+}

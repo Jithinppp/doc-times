@@ -1,3 +1,4 @@
+import { Layout } from "../../components";
 export default function PostsPage() {
-  return <div>PostsPage</div>;
+  return <Layout>posts</Layout>;
 }

@@ -10,8 +10,8 @@ export default function PostCard({ post: { node } }) {
       <div className={styles.card__header}>
         <Image
           className={styles.card__image}
-          width={400}
-          height={200}
+          width={700}
+          height={300}
           src={node.featuredImage.url}
           alt="card-image"
         />

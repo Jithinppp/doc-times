@@ -6,14 +6,15 @@
   background-color: #fff;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   overflow: hidden;
-  width: 344px;
-  height: max-content;
+  // width: 100%;
+  max-width: 700px;
+  // height: max-content;
   .card__header {
+    // position: relative;
     margin-bottom: 1rem;
     & img {
-      width: 100%;
       object-position: center;
-      object-fit: cover;
+      object-fit: contain;
     }
   }
   & .card__body {
@@ -57,7 +58,6 @@
     .date {
       color: $color-text-light-black;
       font-size: 0.78rem;
-      font-family: $font-DM-Serif-Text;
     }
   }
 }
