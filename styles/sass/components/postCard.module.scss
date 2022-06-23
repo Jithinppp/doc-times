@@ -2,7 +2,7 @@
 
 .card {
   color: $color-text-black;
-  margin: 10px;
+  margin: 10px 0;
   background-color: #fff;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   overflow: hidden;
@@ -69,6 +69,6 @@
 }
 @media only screen and (max-width: 430px) {
   .card {
-    width: 260px;
+    width: 98%;
   }
 }
